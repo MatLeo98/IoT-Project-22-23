@@ -1,0 +1,4288 @@
+[
+    {
+        "id": "344b7b87a641f1ca",
+        "type": "tab",
+        "label": "Enter and Exit",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c56140b45566cf37",
+        "type": "tab",
+        "label": "Check Temperature",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1f2eeb83244d508c",
+        "type": "tab",
+        "label": "Watch Time",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f099148ccb78f2a2",
+        "type": "tab",
+        "label": "Air quality",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b8020a651d63ec4c",
+        "type": "tab",
+        "label": "Humidity",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "eebe60b9e3e32099",
+        "type": "tab",
+        "label": "Light",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5d926a286fdf195d",
+        "type": "mqtt-broker",
+        "name": "DockerBroker",
+        "broker": "172.19.0.5",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6a36d4904932b811",
+        "type": "influxdb",
+        "hostname": "eloquent_leakey",
+        "port": "8086",
+        "protocol": "http",
+        "database": "prova",
+        "name": "ArtExhibition",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://172.19.0.4:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "caebf959.f8cb8",
+        "type": "ui_tab",
+        "name": "Temperature",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "76e7315.6625f5",
+        "type": "ui_group",
+        "name": "Artworks catalogue",
+        "tab": "a672e0bab476e8aa",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b8df568df9d5b315",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e7c876509e548cfa",
+        "type": "mqtt-broker",
+        "name": "Mosquitto",
+        "broker": "172.17.0.3",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "63bb61fab704672d",
+        "type": "mqtt-broker",
+        "name": "Mosquitto",
+        "broker": "172.17.0.3",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a672e0bab476e8aa",
+        "type": "ui_tab",
+        "name": "Art exhibition",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fb3af96cf25d0f13",
+        "type": "ui_tab",
+        "name": "Admin panel",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7e8d7f20d35d449e",
+        "type": "ui_group",
+        "name": "Temperature controls",
+        "tab": "fb3af96cf25d0f13",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "39bcd7b93a250f21",
+        "type": "inject",
+        "z": "344b7b87a641f1ca",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "enter",
+        "payloadType": "str",
+        "x": 90,
+        "y": 60,
+        "wires": [
+            [
+                "8bd143c96c3d9036"
+            ]
+        ]
+    },
+    {
+        "id": "f6266284641c566d",
+        "type": "function",
+        "z": "344b7b87a641f1ca",
+        "name": "enter",
+        "func": "if (msg.payload.length > 0)\n    msg.payload[0]._value += 1;\nelse\n    msg.payload = 1;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 60,
+        "wires": [
+            [
+                "3f06a02c5c6a10d5"
+            ]
+        ]
+    },
+    {
+        "id": "3f06a02c5c6a10d5",
+        "type": "mqtt out",
+        "z": "344b7b87a641f1ca",
+        "name": "",
+        "topic": "building/visitors",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 840,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "30fd7536ecc90d4e",
+        "type": "mqtt in",
+        "z": "344b7b87a641f1ca",
+        "name": "",
+        "topic": "building/visitors",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5d926a286fdf195d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 480,
+        "y": 240,
+        "wires": [
+            [
+                "de04bef57aba5ec3"
+            ]
+        ]
+    },
+    {
+        "id": "de04bef57aba5ec3",
+        "type": "function",
+        "z": "344b7b87a641f1ca",
+        "name": "conversion",
+        "func": "if (msg.payload.length > 0) {\n    msg.payload = Number(msg.payload[0]._value)\n} else {\n    msg.payload = Number(msg.payload)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 240,
+        "wires": [
+            [
+                "23038bdfd0f17eed"
+            ]
+        ]
+    },
+    {
+        "id": "045d08c2d385b921",
+        "type": "inject",
+        "z": "344b7b87a641f1ca",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "exit",
+        "payloadType": "str",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "8bd143c96c3d9036"
+            ]
+        ]
+    },
+    {
+        "id": "f9b8a632fbc7fdd8",
+        "type": "function",
+        "z": "344b7b87a641f1ca",
+        "name": "exit",
+        "func": "msg.payload[0]._value -= 1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 140,
+        "wires": [
+            [
+                "3f06a02c5c6a10d5"
+            ]
+        ]
+    },
+    {
+        "id": "23038bdfd0f17eed",
+        "type": "influxdb out",
+        "z": "344b7b87a641f1ca",
+        "influxdb": "6a36d4904932b811",
+        "name": "crowdUpdate",
+        "measurement": "people",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 850,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "8bd143c96c3d9036",
+        "type": "switch",
+        "z": "344b7b87a641f1ca",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "enter",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "exit",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 100,
+        "wires": [
+            [
+                "a8da706391cf81ad"
+            ],
+            [
+                "b2b1b6427c373383"
+            ]
+        ]
+    },
+    {
+        "id": "a8da706391cf81ad",
+        "type": "influxdb in",
+        "z": "344b7b87a641f1ca",
+        "influxdb": "6a36d4904932b811",
+        "name": "getCrowdInside",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"people\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 460,
+        "y": 60,
+        "wires": [
+            [
+                "f6266284641c566d"
+            ]
+        ]
+    },
+    {
+        "id": "b2b1b6427c373383",
+        "type": "influxdb in",
+        "z": "344b7b87a641f1ca",
+        "influxdb": "6a36d4904932b811",
+        "name": "getCrowdInside",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"people\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 460,
+        "y": 140,
+        "wires": [
+            [
+                "f9b8a632fbc7fdd8"
+            ]
+        ]
+    },
+    {
+        "id": "8c3dc98ca398bf77",
+        "type": "mqtt out",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "topic": "rooms/1/temperature",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 460,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a1110abe22d99837",
+        "type": "inject",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "room1",
+        "payloadType": "str",
+        "x": 100,
+        "y": 40,
+        "wires": [
+            [
+                "b501b1b2260c3093"
+            ]
+        ]
+    },
+    {
+        "id": "b501b1b2260c3093",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "random",
+        "func": "const MIN = 20;\nconst MAX = 22;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min)) + min;\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 40,
+        "wires": [
+            [
+                "8c3dc98ca398bf77"
+            ]
+        ]
+    },
+    {
+        "id": "ab6522fd788fee4f",
+        "type": "inject",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "getTemperatureRoom1",
+        "payloadType": "str",
+        "x": 140,
+        "y": 340,
+        "wires": [
+            [
+                "80dbd48833d931a3"
+            ]
+        ]
+    },
+    {
+        "id": "00b7fa3f969ad912",
+        "type": "switch",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "property": "payload[0]._value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "21",
+                "vt": "str"
+            },
+            {
+                "t": "gte",
+                "v": "25",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 340,
+        "wires": [
+            [
+                "7408a540897c3aa8"
+            ],
+            [
+                "a1cf3edfd5c920ef"
+            ]
+        ]
+    },
+    {
+        "id": "7408a540897c3aa8",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "setOn",
+        "func": "msg.payload = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 260,
+        "wires": [
+            [
+                "4174bf514997b264"
+            ]
+        ]
+    },
+    {
+        "id": "a1cf3edfd5c920ef",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "setOn",
+        "func": "msg.payload = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 420,
+        "wires": [
+            [
+                "ffe20a3fe1a10537"
+            ]
+        ]
+    },
+    {
+        "id": "71f2302a1a2ab2b2",
+        "type": "influxdb out",
+        "z": "c56140b45566cf37",
+        "influxdb": "6a36d4904932b811",
+        "name": "temperature1",
+        "measurement": "temperature1",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1290,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "80dbd48833d931a3",
+        "type": "influxdb in",
+        "z": "c56140b45566cf37",
+        "influxdb": "6a36d4904932b811",
+        "name": "GetCrowdInside",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"temperature1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "00b7fa3f969ad912"
+            ]
+        ]
+    },
+    {
+        "id": "88bd7d28c3ed7d35",
+        "type": "mqtt out",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "topic": "rooms/2/temperature",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 460,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "7871236a5217710c",
+        "type": "inject",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "room2",
+        "payloadType": "str",
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "3a4113faa365daf3"
+            ]
+        ]
+    },
+    {
+        "id": "3a4113faa365daf3",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "random",
+        "func": "const MIN = 19;\nconst MAX = 21;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min)) + min;\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 100,
+        "wires": [
+            [
+                "88bd7d28c3ed7d35"
+            ]
+        ]
+    },
+    {
+        "id": "f3bffbd105ac61a5",
+        "type": "influxdb out",
+        "z": "c56140b45566cf37",
+        "influxdb": "6a36d4904932b811",
+        "name": "temperature2",
+        "measurement": "temperature2",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1290,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "9ef938bb3ba6837c",
+        "type": "mqtt out",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "topic": "rooms/3/temperature",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 460,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8b2b6192b820c675",
+        "type": "inject",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "room3",
+        "payloadType": "str",
+        "x": 100,
+        "y": 160,
+        "wires": [
+            [
+                "dc077ec7274832f4"
+            ]
+        ]
+    },
+    {
+        "id": "dc077ec7274832f4",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "random",
+        "func": "const MIN = 21;\nconst MAX = 24;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min)) + min;\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 160,
+        "wires": [
+            [
+                "9ef938bb3ba6837c"
+            ]
+        ]
+    },
+    {
+        "id": "734d5617b646d068",
+        "type": "influxdb out",
+        "z": "c56140b45566cf37",
+        "influxdb": "6a36d4904932b811",
+        "name": "temperature3",
+        "measurement": "temperature3",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1290,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "bc7b5b878b1d9d89",
+        "type": "mqtt in",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "topic": "rooms/+/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5d926a286fdf195d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 690,
+        "y": 100,
+        "wires": [
+            [
+                "438a87695dcde3c2"
+            ]
+        ]
+    },
+    {
+        "id": "438a87695dcde3c2",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "conversion",
+        "func": "msg.payload = Number(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 100,
+        "wires": [
+            [
+                "bdb31d0a1dac9711"
+            ]
+        ]
+    },
+    {
+        "id": "bdb31d0a1dac9711",
+        "type": "switch",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "rooms/1/temperature",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "rooms/2/temperature",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "rooms/3/temperature",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1050,
+        "y": 100,
+        "wires": [
+            [
+                "71f2302a1a2ab2b2"
+            ],
+            [
+                "f3bffbd105ac61a5"
+            ],
+            [
+                "734d5617b646d068"
+            ]
+        ]
+    },
+    {
+        "id": "c239cfca590ab7eb",
+        "type": "template",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<html>\n\n<body>\n    <div id=\"my_links\">\n        <p>{{alert}}</p>\n    </div>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 1220,
+        "y": 340,
+        "wires": [
+            [
+                "1251e7de648b86c5"
+            ]
+        ]
+    },
+    {
+        "id": "1251e7de648b86c5",
+        "type": "ui_toast",
+        "z": "c56140b45566cf37",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "Temperature",
+        "name": "Temperature",
+        "x": 1390,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4174bf514997b264",
+        "type": "ui_switch",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "label": "Heat room 1",
+        "tooltip": "",
+        "group": "7e8d7f20d35d449e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 870,
+        "y": 260,
+        "wires": [
+            [
+                "c32a433c64f37228"
+            ]
+        ]
+    },
+    {
+        "id": "ffe20a3fe1a10537",
+        "type": "ui_switch",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "label": "Cooler room 1",
+        "tooltip": "",
+        "group": "7e8d7f20d35d449e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 880,
+        "y": 420,
+        "wires": [
+            [
+                "bc2f0ed4f840f184"
+            ]
+        ]
+    },
+    {
+        "id": "c32a433c64f37228",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "alert",
+        "func": "if(msg.payload == true)\n    msg.alert = \"The temperature is too low, heat turned on\";\nelse\n    msg.alert = \"The temperature is optimal, heat turned off\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 300,
+        "wires": [
+            [
+                "c239cfca590ab7eb"
+            ]
+        ]
+    },
+    {
+        "id": "bc2f0ed4f840f184",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "alert",
+        "func": "if (msg.payload == true)\n    msg.alert = \"The temperature is too high, cooler turned on\";\nelse\n    msg.alert = \"The temperature is optimal, cooler turned off\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 380,
+        "wires": [
+            [
+                "c239cfca590ab7eb"
+            ]
+        ]
+    },
+    {
+        "id": "0931dce7b2d703be",
+        "type": "inject",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "getTemperatureRoom2",
+        "payloadType": "str",
+        "x": 140,
+        "y": 620,
+        "wires": [
+            [
+                "f0b7c7308af26f7f"
+            ]
+        ]
+    },
+    {
+        "id": "98831fde60feb99b",
+        "type": "switch",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "property": "payload[0]._value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "18",
+                "vt": "str"
+            },
+            {
+                "t": "gte",
+                "v": "19",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 620,
+        "wires": [
+            [
+                "dab5502fb80c8a9f"
+            ],
+            [
+                "4958f91a3e881bbb"
+            ]
+        ]
+    },
+    {
+        "id": "dab5502fb80c8a9f",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "setOn",
+        "func": "msg.payload = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 540,
+        "wires": [
+            [
+                "2dd9b43f0e4fece6"
+            ]
+        ]
+    },
+    {
+        "id": "4958f91a3e881bbb",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "setOn",
+        "func": "msg.payload = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 700,
+        "wires": [
+            [
+                "647eb3bf9a29318b"
+            ]
+        ]
+    },
+    {
+        "id": "f0b7c7308af26f7f",
+        "type": "influxdb in",
+        "z": "c56140b45566cf37",
+        "influxdb": "6a36d4904932b811",
+        "name": "GetCrowdInside",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"temperature2\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 360,
+        "y": 620,
+        "wires": [
+            [
+                "98831fde60feb99b"
+            ]
+        ]
+    },
+    {
+        "id": "3c3db8e606539014",
+        "type": "template",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<html>\n\n<body>\n    <div id=\"my_links\">\n        <p>{{alert}}</p>\n    </div>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 1220,
+        "y": 620,
+        "wires": [
+            [
+                "0b7e9a8aa75ad882"
+            ]
+        ]
+    },
+    {
+        "id": "0b7e9a8aa75ad882",
+        "type": "ui_toast",
+        "z": "c56140b45566cf37",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "Temperature",
+        "name": "Temperature",
+        "x": 1390,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2dd9b43f0e4fece6",
+        "type": "ui_switch",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "label": "Heat room 2",
+        "tooltip": "",
+        "group": "7e8d7f20d35d449e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 870,
+        "y": 540,
+        "wires": [
+            [
+                "24c81ccead919a68"
+            ]
+        ]
+    },
+    {
+        "id": "647eb3bf9a29318b",
+        "type": "ui_switch",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "label": "Cooler room 2",
+        "tooltip": "",
+        "group": "7e8d7f20d35d449e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 880,
+        "y": 700,
+        "wires": [
+            [
+                "afa6989922579f4a"
+            ]
+        ]
+    },
+    {
+        "id": "24c81ccead919a68",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "alert",
+        "func": "if(msg.payload == true)\n    msg.alert = \"The temperature is too low, heat turned on\";\nelse\n    msg.alert = \"The temperature is optimal, heat turned off\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 580,
+        "wires": [
+            [
+                "3c3db8e606539014"
+            ]
+        ]
+    },
+    {
+        "id": "afa6989922579f4a",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "alert",
+        "func": "if (msg.payload == true)\n    msg.alert = \"The temperature is too high, cooler turned on\";\nelse\n    msg.alert = \"The temperature is optimal, cooler turned off\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 660,
+        "wires": [
+            [
+                "3c3db8e606539014"
+            ]
+        ]
+    },
+    {
+        "id": "424e602e03dc860b",
+        "type": "inject",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "getTemperatureRoom3",
+        "payloadType": "str",
+        "x": 140,
+        "y": 920,
+        "wires": [
+            [
+                "41e4791a3e0b80aa"
+            ]
+        ]
+    },
+    {
+        "id": "b1da203e842c3889",
+        "type": "switch",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "property": "payload[0]._value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "21",
+                "vt": "str"
+            },
+            {
+                "t": "gte",
+                "v": "25",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 920,
+        "wires": [
+            [
+                "7f3130062a8dbea4"
+            ],
+            [
+                "364f0491a91c22d5"
+            ]
+        ]
+    },
+    {
+        "id": "7f3130062a8dbea4",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "setOn",
+        "func": "msg.payload = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 840,
+        "wires": [
+            [
+                "80d7439ef3ec59d6"
+            ]
+        ]
+    },
+    {
+        "id": "364f0491a91c22d5",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "setOn",
+        "func": "msg.payload = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1000,
+        "wires": [
+            [
+                "718f0c5e74d059f4"
+            ]
+        ]
+    },
+    {
+        "id": "41e4791a3e0b80aa",
+        "type": "influxdb in",
+        "z": "c56140b45566cf37",
+        "influxdb": "6a36d4904932b811",
+        "name": "GetCrowdInside",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"temperature3\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 360,
+        "y": 920,
+        "wires": [
+            [
+                "b1da203e842c3889"
+            ]
+        ]
+    },
+    {
+        "id": "25eb8e5747df5aad",
+        "type": "template",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<html>\n\n<body>\n    <div id=\"my_links\">\n        <p>{{alert}}</p>\n    </div>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 1220,
+        "y": 920,
+        "wires": [
+            [
+                "7d4365eb65c6b615"
+            ]
+        ]
+    },
+    {
+        "id": "7d4365eb65c6b615",
+        "type": "ui_toast",
+        "z": "c56140b45566cf37",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "Temperature",
+        "name": "Temperature",
+        "x": 1390,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80d7439ef3ec59d6",
+        "type": "ui_switch",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "label": "Heat room 3",
+        "tooltip": "",
+        "group": "7e8d7f20d35d449e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 870,
+        "y": 840,
+        "wires": [
+            [
+                "57ac32be74459ffb"
+            ]
+        ]
+    },
+    {
+        "id": "718f0c5e74d059f4",
+        "type": "ui_switch",
+        "z": "c56140b45566cf37",
+        "name": "",
+        "label": "Cooler room 3",
+        "tooltip": "",
+        "group": "7e8d7f20d35d449e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 880,
+        "y": 1000,
+        "wires": [
+            [
+                "336fdcbd0d3aeebb"
+            ]
+        ]
+    },
+    {
+        "id": "57ac32be74459ffb",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "alert",
+        "func": "if(msg.payload == true)\n    msg.alert = \"The temperature is too low, heat turned on\";\nelse\n    msg.alert = \"The temperature is optimal, heat turned off\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 880,
+        "wires": [
+            [
+                "25eb8e5747df5aad"
+            ]
+        ]
+    },
+    {
+        "id": "336fdcbd0d3aeebb",
+        "type": "function",
+        "z": "c56140b45566cf37",
+        "name": "alert",
+        "func": "if (msg.payload == true)\n    msg.alert = \"The temperature is too high, cooler turned on\";\nelse\n    msg.alert = \"The temperature is optimal, cooler turned off\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 960,
+        "wires": [
+            [
+                "25eb8e5747df5aad"
+            ]
+        ]
+    },
+    {
+        "id": "aa59dfdc197d2108",
+        "type": "mqtt out",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "topic": "artworks/1/visitors",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 670,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "9f2211f98a71d6ec",
+        "type": "inject",
+        "z": "1f2eeb83244d508c",
+        "name": "Visitors close to Artwork1",
+        "props": [
+            {
+                "p": "art",
+                "v": "{\"description\":\"Composition A is the first neoplastic work of the Dutch painter Piet Mondrian, created in 1919. The canvas, except for the use of the gray colour, which will disappear in the subsequent abstract compositions, fully responds to the rules dictated by the current of Neoplasticism (1917): use of vertical and horizontal lines absolutely orthogonal to each other, exclusive use of the non-colors black and white and of the primary colors red, yellow and blue spread in flat backgrounds of color.\",\"url\":\"https://it.wikipedia.org/wiki/Composition_A;_Composizione_con_nero,_rosso,_grigio,_giallo_e_blu\"}",
+                "vt": "json"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 40,
+        "wires": [
+            [
+                "bfaf4a1e6f1bb615",
+                "85d0e0d145a0d743"
+            ]
+        ]
+    },
+    {
+        "id": "da529eefc390cbae",
+        "type": "mqtt in",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "topic": "artworks/1/visitors",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "5d926a286fdf195d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "ad4e897e543153e7"
+            ]
+        ]
+    },
+    {
+        "id": "ad4e897e543153e7",
+        "type": "json",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "f45b94c7694efb81"
+            ]
+        ]
+    },
+    {
+        "id": "f45b94c7694efb81",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "getDevID",
+        "func": "msg.payload = Number(msg.payload.DevID);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 100,
+        "wires": [
+            [
+                "9334280a40573c54"
+            ]
+        ]
+    },
+    {
+        "id": "9334280a40573c54",
+        "type": "influxdb out",
+        "z": "1f2eeb83244d508c",
+        "influxdb": "6a36d4904932b811",
+        "name": "artwork1",
+        "measurement": "artwork1",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 700,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "a6624efc4569ee92",
+        "type": "mqtt out",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "topic": "artworks/2/visitors",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 670,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d03525b45866560e",
+        "type": "inject",
+        "z": "1f2eeb83244d508c",
+        "name": "Visitors close to Artwork2",
+        "props": [
+            {
+                "p": "art",
+                "v": "{\"description\":\"The painting shows sunflowers in each stage of flowering, from bud to wilting. While some have interpreted the twisted shapes of the petals and stems as a sign of torment, it is clear from the letters to his brother that this subject gave joy and optimism, as a symbol of the temperate climate of the south.\", \"url\":\"https://it.wikipedia.org/wiki/Girasoli_(Van_Gogh)\"}",
+                "vt": "json"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "5e4ad58cae6c9b66",
+                "85d0e0d145a0d743"
+            ]
+        ]
+    },
+    {
+        "id": "9afef07dab310367",
+        "type": "mqtt in",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "topic": "artworks/2/visitors",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "5d926a286fdf195d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "5be9fd293867d989"
+            ]
+        ]
+    },
+    {
+        "id": "5be9fd293867d989",
+        "type": "json",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 330,
+        "y": 260,
+        "wires": [
+            [
+                "134abca49f92f701"
+            ]
+        ]
+    },
+    {
+        "id": "134abca49f92f701",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "getDevID",
+        "func": "msg.payload = Number(msg.payload.DevID);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "ec2122fdd37b84a6"
+            ]
+        ]
+    },
+    {
+        "id": "ec2122fdd37b84a6",
+        "type": "influxdb out",
+        "z": "1f2eeb83244d508c",
+        "influxdb": "6a36d4904932b811",
+        "name": "artwork2",
+        "measurement": "artwork2",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 700,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "5e4ad58cae6c9b66",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "random",
+        "func": "const MIN = 1;\nconst MAX = 200;\n\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return {\"DevID\": Math.floor(Math.random() * (max - min)) + min};\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 200,
+        "wires": [
+            [
+                "a6624efc4569ee92"
+            ]
+        ]
+    },
+    {
+        "id": "bfaf4a1e6f1bb615",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "random",
+        "func": "const MIN = 1;\nconst MAX = 200;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return {\"DevID\": Math.floor(Math.random() * (max - min)) + min};\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 40,
+        "wires": [
+            [
+                "aa59dfdc197d2108"
+            ]
+        ]
+    },
+    {
+        "id": "be5850b50cbdfa26",
+        "type": "mqtt out",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "topic": "artworks/3/visitors",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 670,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "2d5082dcf86219c6",
+        "type": "inject",
+        "z": "1f2eeb83244d508c",
+        "name": "Visitors close to Artwork3",
+        "props": [
+            {
+                "p": "art",
+                "v": "{\"description\":\"The painting depicts two lovers tightly embracing, with the man bending down to kiss the woman, placed in an abstract and ethereal place. It therefore represents the triumph of eros and its power to transcend and harmonizing conflicts and antitheses between men and women.\", \"url\":\"https://it.wikipedia.org/wiki/Il_bacio_(Klimt)\"}",
+                "vt": "json"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 180,
+        "y": 360,
+        "wires": [
+            [
+                "3428f156d72de8f1",
+                "85d0e0d145a0d743"
+            ]
+        ]
+    },
+    {
+        "id": "997098ce809ccbdc",
+        "type": "mqtt in",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "topic": "artworks/3/visitors",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "5d926a286fdf195d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 420,
+        "wires": [
+            [
+                "2f45ee1f57aa4221"
+            ]
+        ]
+    },
+    {
+        "id": "2f45ee1f57aa4221",
+        "type": "json",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 330,
+        "y": 420,
+        "wires": [
+            [
+                "a7aa2b8f9ec871ab"
+            ]
+        ]
+    },
+    {
+        "id": "a7aa2b8f9ec871ab",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "getDevID",
+        "func": "msg.payload = Number(msg.payload.DevID);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 420,
+        "wires": [
+            [
+                "43d85f736893eff2"
+            ]
+        ]
+    },
+    {
+        "id": "43d85f736893eff2",
+        "type": "influxdb out",
+        "z": "1f2eeb83244d508c",
+        "influxdb": "6a36d4904932b811",
+        "name": "artwork3",
+        "measurement": "artwork3",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 700,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "3428f156d72de8f1",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "random",
+        "func": "const MIN = 1;\nconst MAX = 200;\n\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return {\"DevID\": Math.floor(Math.random() * (max - min)) + min};\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 360,
+        "wires": [
+            [
+                "be5850b50cbdfa26"
+            ]
+        ]
+    },
+    {
+        "id": "ee830600261f2cc3",
+        "type": "inject",
+        "z": "1f2eeb83244d508c",
+        "name": "Visitors leave the Artwork1 area",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"DevID\":1}",
+        "payloadType": "json",
+        "x": 1000,
+        "y": 40,
+        "wires": [
+            [
+                "fd3834e1ef99c5fb"
+            ]
+        ]
+    },
+    {
+        "id": "274a6eb66610629f",
+        "type": "mqtt out",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "topic": "artworks/1/leave",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 1660,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "801fa576f9d37643",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "random",
+        "func": "const MIN = 1;\nconst MAX = 200;\n\nvar item = msg.payload[Math.floor(Math.random() * msg.payload.length)];\nmsg.payload = { \"DevID\": item._value };\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 40,
+        "wires": [
+            [
+                "274a6eb66610629f"
+            ]
+        ]
+    },
+    {
+        "id": "4eb3fa4c925fee1b",
+        "type": "json",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1090,
+        "y": 100,
+        "wires": [
+            [
+                "c5c81865a4d5c48e"
+            ]
+        ]
+    },
+    {
+        "id": "e3b60acac7112c66",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "timeDifference",
+        "func": "for (let index = 0; index < msg.payload.length; index++) {\n    if (msg.payload[index]._value == msg.user){\n        let current = new Date().valueOf();\n        let previous = new Date(msg.payload[index]._time).valueOf();\n        let diff = current - previous;\n        let mins = Math.round((diff % 3600000) / 60000);\n        let hours = Math.floor(diff / 3600000)\n        msg.payload = hours > 0 ? `${hours} hours and ` : \"\";\n        if (mins >= 1){\n            msg.time = `${mins} minutes ago.`\n            msg.payload = mins; \n        } \n\n    } \n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1640,
+        "y": 100,
+        "wires": [
+            [
+                "c8a0007b4b3fab61"
+            ]
+        ]
+    },
+    {
+        "id": "c5c81865a4d5c48e",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "getDevID",
+        "func": "msg.user = Number(msg.payload.DevID);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 100,
+        "wires": [
+            [
+                "8d39439fb93df86e"
+            ]
+        ]
+    },
+    {
+        "id": "8889c818b0f5c9ed",
+        "type": "mqtt in",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "topic": "artworks/1/leave",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "5d926a286fdf195d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 920,
+        "y": 100,
+        "wires": [
+            [
+                "4eb3fa4c925fee1b"
+            ]
+        ]
+    },
+    {
+        "id": "c8a0007b4b3fab61",
+        "type": "influxdb out",
+        "z": "1f2eeb83244d508c",
+        "influxdb": "6a36d4904932b811",
+        "name": "art1_watchingTime",
+        "measurement": "art1_watchingTime",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1850,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8d39439fb93df86e",
+        "type": "influxdb in",
+        "z": "1f2eeb83244d508c",
+        "influxdb": "6a36d4904932b811",
+        "name": "getProximityValues",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"artwork1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 1430,
+        "y": 100,
+        "wires": [
+            [
+                "e3b60acac7112c66"
+            ]
+        ]
+    },
+    {
+        "id": "09503fba985ae18b",
+        "type": "inject",
+        "z": "1f2eeb83244d508c",
+        "name": "Visitors leave the Artwork2 area",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"DevID\":1}",
+        "payloadType": "json",
+        "x": 1000,
+        "y": 200,
+        "wires": [
+            [
+                "8f83b7b5a68a3e1a"
+            ]
+        ]
+    },
+    {
+        "id": "222e1d15e9cc0dc8",
+        "type": "mqtt out",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "topic": "artworks/2/leave",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 1660,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "fc81ac81e294dec7",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "random",
+        "func": "const MIN = 1;\nconst MAX = 200;\n\nvar item = msg.payload[Math.floor(Math.random() * msg.payload.length)];\nmsg.payload = { \"DevID\": item._value };\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 200,
+        "wires": [
+            [
+                "222e1d15e9cc0dc8"
+            ]
+        ]
+    },
+    {
+        "id": "98508579be0251c6",
+        "type": "json",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1090,
+        "y": 260,
+        "wires": [
+            [
+                "a14161c7c94b5c87"
+            ]
+        ]
+    },
+    {
+        "id": "3952bc2db9960cef",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "timeDifference",
+        "func": "for (let index = 0; index < msg.payload.length; index++) {\n    if (msg.payload[index]._value == msg.user){\n        let current = new Date().valueOf();\n        let previous = new Date(msg.payload[index]._time).valueOf();\n        let diff = current - previous;\n        let mins = Math.round((diff % 3600000) / 60000);\n        let hours = Math.floor(diff / 3600000)\n        msg.payload = hours > 0 ? `${hours} hours and ` : \"\";\n        if (mins >= 1){\n            msg.time = `${mins} minutes ago.`\n            msg.payload = mins; \n        } \n\n    } \n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1640,
+        "y": 260,
+        "wires": [
+            [
+                "f2f3bcb1941b336e"
+            ]
+        ]
+    },
+    {
+        "id": "a14161c7c94b5c87",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "getDevID",
+        "func": "msg.user = Number(msg.payload.DevID);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 260,
+        "wires": [
+            [
+                "d18b303cb4772c75"
+            ]
+        ]
+    },
+    {
+        "id": "69f80216edc50b0a",
+        "type": "mqtt in",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "topic": "artworks/2/leave",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "5d926a286fdf195d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 920,
+        "y": 260,
+        "wires": [
+            [
+                "98508579be0251c6"
+            ]
+        ]
+    },
+    {
+        "id": "f2f3bcb1941b336e",
+        "type": "influxdb out",
+        "z": "1f2eeb83244d508c",
+        "influxdb": "6a36d4904932b811",
+        "name": "art2_watchingTime",
+        "measurement": "art2_watchingTime",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1850,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d18b303cb4772c75",
+        "type": "influxdb in",
+        "z": "1f2eeb83244d508c",
+        "influxdb": "6a36d4904932b811",
+        "name": "getProximityValues",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"artwork2\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 1430,
+        "y": 260,
+        "wires": [
+            [
+                "3952bc2db9960cef"
+            ]
+        ]
+    },
+    {
+        "id": "2b632601fa79a693",
+        "type": "inject",
+        "z": "1f2eeb83244d508c",
+        "name": "Visitors leave the Artwork3 area",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"DevID\":1}",
+        "payloadType": "json",
+        "x": 1000,
+        "y": 360,
+        "wires": [
+            [
+                "852246306488b93d"
+            ]
+        ]
+    },
+    {
+        "id": "a25fd7bf10792e9f",
+        "type": "mqtt out",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "topic": "artworks/3/leave",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 1660,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "500eeb2e0899c16b",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "random",
+        "func": "const MIN = 1;\nconst MAX = 200;\n\nvar item = msg.payload[Math.floor(Math.random() * msg.payload.length)];\nmsg.payload = { \"DevID\": item._value };\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 360,
+        "wires": [
+            [
+                "a25fd7bf10792e9f"
+            ]
+        ]
+    },
+    {
+        "id": "da4c4f116cbdf546",
+        "type": "json",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1090,
+        "y": 420,
+        "wires": [
+            [
+                "feb48445f60f1064"
+            ]
+        ]
+    },
+    {
+        "id": "450e5c69162bd4c4",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "timeDifference",
+        "func": "for (let index = 0; index < msg.payload.length; index++) {\n    if (msg.payload[index]._value == msg.user){\n        let current = new Date().valueOf();\n        let previous = new Date(msg.payload[index]._time).valueOf();\n        let diff = current - previous;\n        let mins = Math.round((diff % 3600000) / 60000);\n        let hours = Math.floor(diff / 3600000)\n        msg.payload = hours > 0 ? `${hours} hours and ` : \"\";\n        if (mins >= 1){\n            msg.time = `${mins} minutes ago.`\n            msg.payload = mins; \n        } \n\n    } \n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1640,
+        "y": 420,
+        "wires": [
+            [
+                "0ebaede7138e31e3"
+            ]
+        ]
+    },
+    {
+        "id": "feb48445f60f1064",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "getDevID",
+        "func": "msg.user = Number(msg.payload.DevID);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 420,
+        "wires": [
+            [
+                "1faf5b51c3ce9179"
+            ]
+        ]
+    },
+    {
+        "id": "7119cfa0e2fa736a",
+        "type": "mqtt in",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "topic": "artworks/3/leave",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "5d926a286fdf195d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 920,
+        "y": 420,
+        "wires": [
+            [
+                "da4c4f116cbdf546"
+            ]
+        ]
+    },
+    {
+        "id": "0ebaede7138e31e3",
+        "type": "influxdb out",
+        "z": "1f2eeb83244d508c",
+        "influxdb": "6a36d4904932b811",
+        "name": "art3_watchingTime",
+        "measurement": "art4_watchingTime",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1850,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "1faf5b51c3ce9179",
+        "type": "influxdb in",
+        "z": "1f2eeb83244d508c",
+        "influxdb": "6a36d4904932b811",
+        "name": "getProximityValues",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"artwork3\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 1430,
+        "y": 420,
+        "wires": [
+            [
+                "450e5c69162bd4c4"
+            ]
+        ]
+    },
+    {
+        "id": "fd3834e1ef99c5fb",
+        "type": "influxdb in",
+        "z": "1f2eeb83244d508c",
+        "influxdb": "6a36d4904932b811",
+        "name": "getProximityValues",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"artwork1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 1290,
+        "y": 40,
+        "wires": [
+            [
+                "801fa576f9d37643"
+            ]
+        ]
+    },
+    {
+        "id": "8f83b7b5a68a3e1a",
+        "type": "influxdb in",
+        "z": "1f2eeb83244d508c",
+        "influxdb": "6a36d4904932b811",
+        "name": "getProximityValues",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"artwork2\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 1290,
+        "y": 200,
+        "wires": [
+            [
+                "fc81ac81e294dec7"
+            ]
+        ]
+    },
+    {
+        "id": "852246306488b93d",
+        "type": "influxdb in",
+        "z": "1f2eeb83244d508c",
+        "influxdb": "6a36d4904932b811",
+        "name": "getProximityValues",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"artwork3\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 1290,
+        "y": 360,
+        "wires": [
+            [
+                "500eeb2e0899c16b"
+            ]
+        ]
+    },
+    {
+        "id": "7d70f4c3eb083b90",
+        "type": "template",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<html>\n\n<body>\n    <div id=\"my_links\">\n        <p>{{payload.description}}</p>\n        <p>For more details click here:</p>\n        <a target=\"_blank\" href=\"{{payload.url}}\">Go to Link</a>\n    </div>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 740,
+        "y": 520,
+        "wires": [
+            [
+                "c8e5d99bc75610ad"
+            ]
+        ]
+    },
+    {
+        "id": "c8e5d99bc75610ad",
+        "type": "ui_toast",
+        "z": "1f2eeb83244d508c",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "Artwork Description",
+        "name": "Show Artwork Description",
+        "x": 970,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85d0e0d145a0d743",
+        "type": "json",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "property": "art",
+        "action": "obj",
+        "pretty": false,
+        "x": 410,
+        "y": 520,
+        "wires": [
+            [
+                "14a77cd8f3b8d51a"
+            ]
+        ]
+    },
+    {
+        "id": "14a77cd8f3b8d51a",
+        "type": "function",
+        "z": "1f2eeb83244d508c",
+        "name": "function 1",
+        "func": "msg.payload = msg.art;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 520,
+        "wires": [
+            [
+                "7d70f4c3eb083b90"
+            ]
+        ]
+    },
+    {
+        "id": "949e16bca685bc7d",
+        "type": "ui_dropdown",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "label": "Select artwork:",
+        "tooltip": "",
+        "place": "Select...",
+        "group": "76e7315.6625f5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Artwork 1",
+                "value": "{\"description\":\"Composition A is the first neoplastic work of the Dutch painter Piet Mondrian, created in 1919. The canvas, except for the use of the gray colour, which will disappear in the subsequent abstract compositions, fully responds to the rules dictated by the current of Neoplasticism (1917): use of vertical and horizontal lines absolutely orthogonal to each other, exclusive use of the non-colors black and white and of the primary colors red, yellow and blue spread in flat backgrounds of color.\",\"url\":\"https://it.wikipedia.org/wiki/Composition_A;_Composizione_con_nero,_rosso,_grigio,_giallo_e_blu\"}",
+                "type": "str"
+            },
+            {
+                "label": "Artwork 2",
+                "value": "{\"description\":\"The painting shows sunflowers in each stage of flowering, from bud to wilting. While some have interpreted the twisted shapes of the petals and stems as a sign of torment, it is clear from the letters to his brother that this subject gave joy and optimism, as a symbol of the temperate climate of the south.\", \"url\":\"https://it.wikipedia.org/wiki/Girasoli_(Van_Gogh)\"}",
+                "type": "str"
+            },
+            {
+                "label": "Artwork 3",
+                "value": "{\"description\":\"The painting depicts two lovers tightly embracing, with the man bending down to kiss the woman, placed in an abstract and ethereal place. It therefore represents the triumph of eros and its power to transcend and harmonizing conflicts and antitheses between men and women.\", \"url\":\"https://it.wikipedia.org/wiki/Il_bacio_(Klimt)\"}",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 400,
+        "y": 640,
+        "wires": [
+            [
+                "7b70d12fd6bc02b5"
+            ]
+        ]
+    },
+    {
+        "id": "7b70d12fd6bc02b5",
+        "type": "json",
+        "z": "1f2eeb83244d508c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 590,
+        "y": 600,
+        "wires": [
+            [
+                "7d70f4c3eb083b90"
+            ]
+        ]
+    },
+    {
+        "id": "0daf358fe613ef90",
+        "type": "mqtt out",
+        "z": "f099148ccb78f2a2",
+        "name": "",
+        "topic": "rooms/1/air",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 450,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "6f2b876e4e8255b7",
+        "type": "inject",
+        "z": "f099148ccb78f2a2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "room1",
+        "payloadType": "str",
+        "x": 120,
+        "y": 40,
+        "wires": [
+            [
+                "4ff773f84d9388bf"
+            ]
+        ]
+    },
+    {
+        "id": "4ff773f84d9388bf",
+        "type": "function",
+        "z": "f099148ccb78f2a2",
+        "name": "random",
+        "func": "const MIN = 30;\nconst MAX = 40;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min)) + min;\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 40,
+        "wires": [
+            [
+                "0daf358fe613ef90"
+            ]
+        ]
+    },
+    {
+        "id": "e63414a3e9ff4a71",
+        "type": "influxdb out",
+        "z": "f099148ccb78f2a2",
+        "influxdb": "6a36d4904932b811",
+        "name": "air1",
+        "measurement": "air1",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1150,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "f1a1af6ea0171a0c",
+        "type": "mqtt out",
+        "z": "f099148ccb78f2a2",
+        "name": "",
+        "topic": "rooms/2/air",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 450,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f678efd111343923",
+        "type": "inject",
+        "z": "f099148ccb78f2a2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "room2",
+        "payloadType": "str",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "da92fdbd93aa2fe6"
+            ]
+        ]
+    },
+    {
+        "id": "da92fdbd93aa2fe6",
+        "type": "function",
+        "z": "f099148ccb78f2a2",
+        "name": "random",
+        "func": "const MIN = 25;\nconst MAX = 35;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min)) + min;\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 100,
+        "wires": [
+            [
+                "f1a1af6ea0171a0c"
+            ]
+        ]
+    },
+    {
+        "id": "c345d12639f648ec",
+        "type": "influxdb out",
+        "z": "f099148ccb78f2a2",
+        "influxdb": "6a36d4904932b811",
+        "name": "air2",
+        "measurement": "air2",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1150,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b0674c8bbe8591d2",
+        "type": "mqtt out",
+        "z": "f099148ccb78f2a2",
+        "name": "",
+        "topic": "rooms/3/air",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 450,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5cd3d558f819d0ec",
+        "type": "inject",
+        "z": "f099148ccb78f2a2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "room3",
+        "payloadType": "str",
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "9912781258318a3f"
+            ]
+        ]
+    },
+    {
+        "id": "9912781258318a3f",
+        "type": "function",
+        "z": "f099148ccb78f2a2",
+        "name": "random",
+        "func": "const MIN = 45;\nconst MAX = 50;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min)) + min;\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 160,
+        "wires": [
+            [
+                "b0674c8bbe8591d2"
+            ]
+        ]
+    },
+    {
+        "id": "8915d38f699b4464",
+        "type": "influxdb out",
+        "z": "f099148ccb78f2a2",
+        "influxdb": "6a36d4904932b811",
+        "name": "air3",
+        "measurement": "air3",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1150,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5fe94e9014d8fc07",
+        "type": "mqtt in",
+        "z": "f099148ccb78f2a2",
+        "name": "",
+        "topic": "rooms/+/air",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5d926a286fdf195d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 620,
+        "y": 100,
+        "wires": [
+            [
+                "6e981b1286299f25"
+            ]
+        ]
+    },
+    {
+        "id": "6e981b1286299f25",
+        "type": "function",
+        "z": "f099148ccb78f2a2",
+        "name": "conversion",
+        "func": "msg.payload = Number(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 100,
+        "wires": [
+            [
+                "986680f56e5d8ef6"
+            ]
+        ]
+    },
+    {
+        "id": "986680f56e5d8ef6",
+        "type": "switch",
+        "z": "f099148ccb78f2a2",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "rooms/1/air",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "rooms/2/air",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "rooms/3/air",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 950,
+        "y": 100,
+        "wires": [
+            [
+                "e63414a3e9ff4a71"
+            ],
+            [
+                "c345d12639f648ec"
+            ],
+            [
+                "8915d38f699b4464"
+            ]
+        ]
+    },
+    {
+        "id": "575facea9cc09bb5",
+        "type": "inject",
+        "z": "f099148ccb78f2a2",
+        "name": "getAirRoom1",
+        "props": [
+            {
+                "p": "alert",
+                "v": "The air quality in room 1 is too bad, do something about it!",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "db1c4c6933071595"
+            ]
+        ]
+    },
+    {
+        "id": "db1c4c6933071595",
+        "type": "influxdb in",
+        "z": "f099148ccb78f2a2",
+        "influxdb": "6a36d4904932b811",
+        "name": "GetAir1",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"air1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "42f3e6531861529a"
+            ]
+        ]
+    },
+    {
+        "id": "e301da3110b01507",
+        "type": "inject",
+        "z": "f099148ccb78f2a2",
+        "name": "getAirRoom2",
+        "props": [
+            {
+                "p": "alert",
+                "v": "The air quality in room 2 is too bad, do something about it!",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "5be51e6d0fc7c68f"
+            ]
+        ]
+    },
+    {
+        "id": "5be51e6d0fc7c68f",
+        "type": "influxdb in",
+        "z": "f099148ccb78f2a2",
+        "influxdb": "6a36d4904932b811",
+        "name": "GetAir2",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"air2\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "42f3e6531861529a"
+            ]
+        ]
+    },
+    {
+        "id": "e9a689521545d69a",
+        "type": "template",
+        "z": "f099148ccb78f2a2",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<html>\n\n<body>\n    <div id=\"my_links\">\n        <p>{{alert}}</p>\n    </div>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 640,
+        "y": 360,
+        "wires": [
+            [
+                "517653f4ea45ce8c"
+            ]
+        ]
+    },
+    {
+        "id": "517653f4ea45ce8c",
+        "type": "ui_toast",
+        "z": "f099148ccb78f2a2",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "Air quality",
+        "name": "Air quality",
+        "x": 820,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42f3e6531861529a",
+        "type": "function",
+        "z": "f099148ccb78f2a2",
+        "name": "alert",
+        "func": "if(msg.payload[0]._value > 50)\n    return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 360,
+        "wires": [
+            [
+                "e9a689521545d69a"
+            ]
+        ]
+    },
+    {
+        "id": "863b27a153edd34c",
+        "type": "inject",
+        "z": "f099148ccb78f2a2",
+        "name": "getAirRoom3",
+        "props": [
+            {
+                "p": "alert",
+                "v": "The air quality in room 3 is too bad, do something about it!",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "91d374015f46c2f2"
+            ]
+        ]
+    },
+    {
+        "id": "91d374015f46c2f2",
+        "type": "influxdb in",
+        "z": "f099148ccb78f2a2",
+        "influxdb": "6a36d4904932b811",
+        "name": "GetAir1",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"air1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 300,
+        "y": 440,
+        "wires": [
+            [
+                "42f3e6531861529a"
+            ]
+        ]
+    },
+    {
+        "id": "4bf480943c0be166",
+        "type": "mqtt out",
+        "z": "b8020a651d63ec4c",
+        "name": "",
+        "topic": "artworks/1/humidity",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 450,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a4176e4f7bc92bd3",
+        "type": "inject",
+        "z": "b8020a651d63ec4c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "artwork1",
+        "payloadType": "str",
+        "x": 100,
+        "y": 40,
+        "wires": [
+            [
+                "6f5e65297db07ff1"
+            ]
+        ]
+    },
+    {
+        "id": "6f5e65297db07ff1",
+        "type": "function",
+        "z": "b8020a651d63ec4c",
+        "name": "random",
+        "func": "const MIN = 55;\nconst MAX = 60;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min)) + min;\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 40,
+        "wires": [
+            [
+                "4bf480943c0be166"
+            ]
+        ]
+    },
+    {
+        "id": "0aa5dc1bbf6ce582",
+        "type": "influxdb out",
+        "z": "b8020a651d63ec4c",
+        "influxdb": "6a36d4904932b811",
+        "name": "humidity1",
+        "measurement": "humidity1",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1220,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "eb7d941b0898ae58",
+        "type": "mqtt out",
+        "z": "b8020a651d63ec4c",
+        "name": "",
+        "topic": "artworks/2/humidity",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 450,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "7e4a467323d56800",
+        "type": "inject",
+        "z": "b8020a651d63ec4c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "artwork2",
+        "payloadType": "str",
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "9ad2de18c3167ca7"
+            ]
+        ]
+    },
+    {
+        "id": "9ad2de18c3167ca7",
+        "type": "function",
+        "z": "b8020a651d63ec4c",
+        "name": "random",
+        "func": "const MIN = 45;\nconst MAX = 50;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min)) + min;\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 100,
+        "wires": [
+            [
+                "eb7d941b0898ae58"
+            ]
+        ]
+    },
+    {
+        "id": "b969bbcbea259419",
+        "type": "influxdb out",
+        "z": "b8020a651d63ec4c",
+        "influxdb": "6a36d4904932b811",
+        "name": "humidity2",
+        "measurement": "humidity2",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1220,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "daa6324d60683a59",
+        "type": "mqtt out",
+        "z": "b8020a651d63ec4c",
+        "name": "",
+        "topic": "artworks/3/humidity",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 450,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "556ff081589f6140",
+        "type": "inject",
+        "z": "b8020a651d63ec4c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "artwork3",
+        "payloadType": "str",
+        "x": 100,
+        "y": 160,
+        "wires": [
+            [
+                "da3b0d85fbf877cc"
+            ]
+        ]
+    },
+    {
+        "id": "da3b0d85fbf877cc",
+        "type": "function",
+        "z": "b8020a651d63ec4c",
+        "name": "random",
+        "func": "const MIN = 55;\nconst MAX = 60;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min)) + min;\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 160,
+        "wires": [
+            [
+                "daa6324d60683a59"
+            ]
+        ]
+    },
+    {
+        "id": "ac2f31764a592eae",
+        "type": "influxdb out",
+        "z": "b8020a651d63ec4c",
+        "influxdb": "6a36d4904932b811",
+        "name": "humidity3",
+        "measurement": "humidity3",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1220,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "9c051aebf4ed1dfd",
+        "type": "mqtt in",
+        "z": "b8020a651d63ec4c",
+        "name": "",
+        "topic": "artworks/+/humidity",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5d926a286fdf195d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 670,
+        "y": 100,
+        "wires": [
+            [
+                "80da0414faf7af19"
+            ]
+        ]
+    },
+    {
+        "id": "80da0414faf7af19",
+        "type": "function",
+        "z": "b8020a651d63ec4c",
+        "name": "conversion",
+        "func": "msg.payload = Number(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 100,
+        "wires": [
+            [
+                "139cf1b11a9151ec"
+            ]
+        ]
+    },
+    {
+        "id": "139cf1b11a9151ec",
+        "type": "switch",
+        "z": "b8020a651d63ec4c",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "artworks/1/humidity",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "artworks/2/humidity",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "artworks/3/humidity",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1030,
+        "y": 100,
+        "wires": [
+            [
+                "0aa5dc1bbf6ce582"
+            ],
+            [
+                "b969bbcbea259419"
+            ],
+            [
+                "ac2f31764a592eae"
+            ]
+        ]
+    },
+    {
+        "id": "b39cd3254db370b4",
+        "type": "inject",
+        "z": "b8020a651d63ec4c",
+        "name": "getHumidityArtwork1",
+        "props": [
+            {
+                "p": "room",
+                "v": "room 1",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "fd16bc80d9d4a0a8"
+            ]
+        ]
+    },
+    {
+        "id": "fd16bc80d9d4a0a8",
+        "type": "influxdb in",
+        "z": "b8020a651d63ec4c",
+        "influxdb": "6a36d4904932b811",
+        "name": "GetHumidity1",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"humidity1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 340,
+        "y": 280,
+        "wires": [
+            [
+                "e2d790884e7a31ac"
+            ]
+        ]
+    },
+    {
+        "id": "2dbe15977379046e",
+        "type": "inject",
+        "z": "b8020a651d63ec4c",
+        "name": "getHumidityArtwork2",
+        "props": [
+            {
+                "p": "room",
+                "v": "room 2",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "d2b74c7bbbda7f23"
+            ]
+        ]
+    },
+    {
+        "id": "d2b74c7bbbda7f23",
+        "type": "influxdb in",
+        "z": "b8020a651d63ec4c",
+        "influxdb": "6a36d4904932b811",
+        "name": "GetHumidity2",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"humidity2\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 340,
+        "y": 360,
+        "wires": [
+            [
+                "e2d790884e7a31ac"
+            ]
+        ]
+    },
+    {
+        "id": "3f66beb5604ee7c3",
+        "type": "template",
+        "z": "b8020a651d63ec4c",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<html>\n\n<body>\n    <div id=\"my_links\">\n        <p>{{alert}}</p>\n    </div>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 760,
+        "y": 360,
+        "wires": [
+            [
+                "312df486213ac409"
+            ]
+        ]
+    },
+    {
+        "id": "312df486213ac409",
+        "type": "ui_toast",
+        "z": "b8020a651d63ec4c",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "Humidity",
+        "name": "Humidity",
+        "x": 940,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e2d790884e7a31ac",
+        "type": "function",
+        "z": "b8020a651d63ec4c",
+        "name": "alert",
+        "func": "if(msg.payload[0]._value > 0){\n    msg.alert = \"The humidity in \" + msg.room + \" is too high, do something about it!\";\n    return msg;}\nelse if (msg.payload[0]._value < 0){\n    msg.alert = \"The humidity in \" + msg.room + \" is too low, do something about it!\";\n    return msg;}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [
+                "3f66beb5604ee7c3"
+            ]
+        ]
+    },
+    {
+        "id": "db566422a69db6ec",
+        "type": "inject",
+        "z": "b8020a651d63ec4c",
+        "name": "getHumidityArtwork3",
+        "props": [
+            {
+                "p": "room",
+                "v": "room 3",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "82fe9131ffe8c4c4"
+            ]
+        ]
+    },
+    {
+        "id": "82fe9131ffe8c4c4",
+        "type": "influxdb in",
+        "z": "b8020a651d63ec4c",
+        "influxdb": "6a36d4904932b811",
+        "name": "GetHumidity3",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"humidity3\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 340,
+        "y": 440,
+        "wires": [
+            [
+                "e2d790884e7a31ac"
+            ]
+        ]
+    },
+    {
+        "id": "d001b60b8322df80",
+        "type": "mqtt out",
+        "z": "eebe60b9e3e32099",
+        "name": "",
+        "topic": "artworks/1/light",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 460,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "24b1b072a5a3f84f",
+        "type": "inject",
+        "z": "eebe60b9e3e32099",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "artwork1",
+        "payloadType": "str",
+        "x": 120,
+        "y": 40,
+        "wires": [
+            [
+                "3d523c44e0bc1a07"
+            ]
+        ]
+    },
+    {
+        "id": "3d523c44e0bc1a07",
+        "type": "function",
+        "z": "eebe60b9e3e32099",
+        "name": "random",
+        "func": "const MIN = 20;\nconst MAX = 40;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min)) + min;\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 40,
+        "wires": [
+            [
+                "d001b60b8322df80"
+            ]
+        ]
+    },
+    {
+        "id": "96eeb5072ba10684",
+        "type": "influxdb out",
+        "z": "eebe60b9e3e32099",
+        "influxdb": "6a36d4904932b811",
+        "name": "light1",
+        "measurement": "light1",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1230,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "9736fc630728f23b",
+        "type": "mqtt out",
+        "z": "eebe60b9e3e32099",
+        "name": "",
+        "topic": "artworks/2/light",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 460,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "4528ece4552d7416",
+        "type": "inject",
+        "z": "eebe60b9e3e32099",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "artwork2",
+        "payloadType": "str",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "81b37b6d61de48a6"
+            ]
+        ]
+    },
+    {
+        "id": "81b37b6d61de48a6",
+        "type": "function",
+        "z": "eebe60b9e3e32099",
+        "name": "random",
+        "func": "const MIN = 35;\nconst MAX = 60;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min)) + min;\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 100,
+        "wires": [
+            [
+                "9736fc630728f23b"
+            ]
+        ]
+    },
+    {
+        "id": "6b26cf752079db37",
+        "type": "influxdb out",
+        "z": "eebe60b9e3e32099",
+        "influxdb": "6a36d4904932b811",
+        "name": "light2",
+        "measurement": "light2",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1230,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "9ae9c7c17b24aabb",
+        "type": "mqtt out",
+        "z": "eebe60b9e3e32099",
+        "name": "",
+        "topic": "artworks/3/light",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5d926a286fdf195d",
+        "x": 460,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5fb402d5bc494417",
+        "type": "inject",
+        "z": "eebe60b9e3e32099",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "artwork3",
+        "payloadType": "str",
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "d04b8226853072e3"
+            ]
+        ]
+    },
+    {
+        "id": "d04b8226853072e3",
+        "type": "function",
+        "z": "eebe60b9e3e32099",
+        "name": "random",
+        "func": "const MIN = 25;\nconst MAX = 60;\n\nmsg.payload = function getRandomInt(min = MIN, max = MAX) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min)) + min;\n}();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 160,
+        "wires": [
+            [
+                "9ae9c7c17b24aabb"
+            ]
+        ]
+    },
+    {
+        "id": "dec6aca62c8454ad",
+        "type": "influxdb out",
+        "z": "eebe60b9e3e32099",
+        "influxdb": "6a36d4904932b811",
+        "name": "light3",
+        "measurement": "light3",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IoT",
+        "bucket": "art_exhibition",
+        "x": 1230,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "4530829616688f3c",
+        "type": "mqtt in",
+        "z": "eebe60b9e3e32099",
+        "name": "",
+        "topic": "artworks/+/light",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5d926a286fdf195d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 680,
+        "y": 100,
+        "wires": [
+            [
+                "230d33700cfe401c"
+            ]
+        ]
+    },
+    {
+        "id": "230d33700cfe401c",
+        "type": "function",
+        "z": "eebe60b9e3e32099",
+        "name": "conversion",
+        "func": "msg.payload = Number(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 100,
+        "wires": [
+            [
+                "df44596b451fc2ba"
+            ]
+        ]
+    },
+    {
+        "id": "df44596b451fc2ba",
+        "type": "switch",
+        "z": "eebe60b9e3e32099",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "artworks/1/light",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "artworks/2/light",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "artworks/3/light",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1050,
+        "y": 100,
+        "wires": [
+            [
+                "96eeb5072ba10684"
+            ],
+            [
+                "6b26cf752079db37"
+            ],
+            [
+                "dec6aca62c8454ad"
+            ]
+        ]
+    },
+    {
+        "id": "8ab5c55e2534d368",
+        "type": "inject",
+        "z": "eebe60b9e3e32099",
+        "name": "getLightArtwork1",
+        "props": [
+            {
+                "p": "alert",
+                "v": "The light intensity on the artwork 1 is too high, do something about it!",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 280,
+        "wires": [
+            [
+                "05be856341cdddd6"
+            ]
+        ]
+    },
+    {
+        "id": "05be856341cdddd6",
+        "type": "influxdb in",
+        "z": "eebe60b9e3e32099",
+        "influxdb": "6a36d4904932b811",
+        "name": "GetLight1",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"light1\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 320,
+        "y": 280,
+        "wires": [
+            [
+                "8172de9fc66bdf95"
+            ]
+        ]
+    },
+    {
+        "id": "a1e445353ada04c8",
+        "type": "inject",
+        "z": "eebe60b9e3e32099",
+        "name": "getLightArtwork2",
+        "props": [
+            {
+                "p": "alert",
+                "v": "The light intensity on the artwork 2 is too high, do something about it!",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [
+                "454cb1744a4bca3d"
+            ]
+        ]
+    },
+    {
+        "id": "454cb1744a4bca3d",
+        "type": "influxdb in",
+        "z": "eebe60b9e3e32099",
+        "influxdb": "6a36d4904932b811",
+        "name": "GetLight2",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"light2\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 320,
+        "y": 360,
+        "wires": [
+            [
+                "8172de9fc66bdf95"
+            ]
+        ]
+    },
+    {
+        "id": "98ee8e7e4c976e9c",
+        "type": "template",
+        "z": "eebe60b9e3e32099",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<html>\n\n<body>\n    <div id=\"my_links\">\n        <p>{{alert}}</p>\n    </div>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 660,
+        "y": 360,
+        "wires": [
+            [
+                "5e7ea755d64aeb18"
+            ]
+        ]
+    },
+    {
+        "id": "5e7ea755d64aeb18",
+        "type": "ui_toast",
+        "z": "eebe60b9e3e32099",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "Light exposure",
+        "name": "Light exposure",
+        "x": 860,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8172de9fc66bdf95",
+        "type": "function",
+        "z": "eebe60b9e3e32099",
+        "name": "alert",
+        "func": "if(msg.payload[0]._value > 75)\n    return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 360,
+        "wires": [
+            [
+                "98ee8e7e4c976e9c"
+            ]
+        ]
+    },
+    {
+        "id": "0f3bc7c58b45bd70",
+        "type": "inject",
+        "z": "eebe60b9e3e32099",
+        "name": "getLightArtwork3",
+        "props": [
+            {
+                "p": "alert",
+                "v": "The light intensity on the artwork 3 is too high, do something about it!",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 440,
+        "wires": [
+            [
+                "b29bed8847883d33"
+            ]
+        ]
+    },
+    {
+        "id": "b29bed8847883d33",
+        "type": "influxdb in",
+        "z": "eebe60b9e3e32099",
+        "influxdb": "6a36d4904932b811",
+        "name": "GetLight3",
+        "query": "from(bucket: \"art_exhibition\")\n  |> range(start:-1h)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"light3\")\n  |> filter(fn: (r) => r[\"_field\"] == \"value\")\n  |> last()",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IoT",
+        "x": 320,
+        "y": 440,
+        "wires": [
+            [
+                "8172de9fc66bdf95"
+            ]
+        ]
+    }
+]
